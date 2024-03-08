@@ -1,2 +1,2 @@
 # Swiftbar Plugins
-Contains personal [https://github.com/swiftbar/SwiftBar](SwiftBar) plugins.
+Contains personal [SwiftBar](https://github.com/swiftbar/SwiftBar)https://github.com/swiftbar/SwiftBar) plugins.
