@@ -6,11 +6,15 @@
 # <xbar.dependencies>zsh</xbar.dependencies>
 # <swiftbar.type>streamable</swiftbar.type>
 # <swiftbar.runInBash>false</swiftbar.runInBash>
+setopt extended_glob
 echo ':chevron.down:'
 while (( 1 )) {
-  text="$( osascript -e 'set text item delimiters to "\n"
+  text=${${${${"$( osascript -e '
+  use scripting additions
+  set text item delimiters to ASCII character 0
   tell application "System Events" to get the title of every window of ¬
-    (every process whose background only is false) as text' | sed -e '/^$/d' -e 's/$/ | symbolize=false emojize=false/' )"
+    (every process whose background only is false) as text'; echo $'\0' )"\
+//$'\n'/}//$'\0'##/$'\0'}//$'\0'/$' | symbolize=false emojize=false\n'}%$'\n'}
   echo '~~~'
   echo ':chevron.down:'
   echo '---'
