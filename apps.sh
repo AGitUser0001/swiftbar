@@ -1,4 +1,9 @@
 #!/bin/zsh -f
+# <xbar.title>Show App Windows</xbar.title>
+# <xbar.version>v1</xbar.version>
+# <xbar.author>Lucas Zheng</xbar.author>
+# <xbar.desc>Shows all windows.</xbar.desc>
+# <xbar.dependencies>zsh</xbar.dependencies>
 # <swiftbar.type>streamable</swiftbar.type>
 # <swiftbar.runInBash>false</swiftbar.runInBash>
 echo ':chevron.down:'
