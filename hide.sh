@@ -25,7 +25,7 @@ if [[ -z $pos ]] {
   put 'dot.arrowtriangles.up.right.down.left.circle'
 } elif (( stat )) {
   defaults write com.ameba.SwiftBar "NSStatusItem Preferred Position $name" -int $(( $pos + 1 ))
-  put 'chevron.left' '' '' "${(l(500)( ))} | trim=false"
+  put 'chevron.left' '' '' "${(l(250)( ))} | trim=false"
 } else {
   put 'chevron.right'
 }
